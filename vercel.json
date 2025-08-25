@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "https://www.shoun-llc.jp/:path*", "destination": "https://shoun-llc.jp/:path*", "permanent": true }
+  ]
+}
