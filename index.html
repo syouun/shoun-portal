@@ -2,33 +2,65 @@
 <html lang="ja">
 <head>
   <meta charset="utf-8">
-  <title>SHOUN GAMES | ポータル</title>
+  <title>SHOUN PORTAL | ブログ &amp; ゲーム</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- ✅ AdSense サイト関連コード（所有権確認 & 配信に必須） -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8062373002822047"
           crossorigin="anonymous"></script>
 
-  <meta name="description" content="SHOUN LLCのゲームポータル。ブラウザで遊べるテトリスなどの作品を公開しています。">
+  <meta name="description" content="SHOUN LLCの公式ポータルサイト。ブログとブラウザゲームの最新情報をサイバーパンクな世界観でお届けします。">
   <link rel="canonical" href="https://shoun-llc.jp/">
   <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0}
-    header{padding:32px 20px;text-align:center;border-bottom:1px solid #eee}
-    main{max-width:960px;margin:0 auto;padding:24px}
-    .card{border:1px solid #eee;border-radius:12px;padding:20px;margin:16px 0}
-    .btn{display:inline-block;padding:12px 20px;border-radius:999px;border:1px solid #333;text-decoration:none}
-    .btn:hover{background:#f5f5f5}
-    footer{color:#666;font-size:12px;text-align:center;padding:24px 0;border-top:1px solid #eee;margin-top:40px}
+    :root{color-scheme:dark;--bg:#040611;--panel:#0d1024;--glow:#00ffe0;--text:#e1f9ff;--muted:#8aa4b4}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;margin:0;color:var(--text);background:radial-gradient(circle at top,#11193a 0%,var(--bg) 60%),url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1600&q=80') center/cover fixed}
+    body::before{content:"";position:fixed;inset:0;background:rgba(4,6,17,.75);backdrop-filter:blur(4px);z-index:-1}
+    header{padding:48px 20px 32px;border-bottom:1px solid rgba(0,255,224,.25);background:linear-gradient(120deg,rgba(0,255,224,.1),rgba(33,10,60,.3));box-shadow:0 0 32px rgba(0,255,224,.15)}
+    .hero-inner{display:flex;flex-direction:column-reverse;gap:32px;max-width:1080px;margin:0 auto;align-items:center}
+    .hero-text{text-align:center;max-width:520px}
+    h1{font-size:2.8rem;margin:0 0 16px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;text-shadow:0 0 12px rgba(0,255,224,.7)}
+    .tagline{margin:0 0 24px;color:var(--muted);line-height:1.7}
+    .hero-links{display:flex;justify-content:center;gap:16px;flex-wrap:wrap}
+    .hero-art{margin:0;max-width:560px;border-radius:24px;overflow:hidden;box-shadow:0 0 24px rgba(0,255,224,.35);border:1px solid rgba(0,255,224,.35)}
+    .hero-art img{display:block;width:100%;height:auto}
+    main{max-width:1080px;margin:0 auto;padding:48px 20px;display:grid;gap:32px}
+    .card{background:rgba(10,12,32,.85);border:1px solid rgba(0,255,224,.2);border-radius:18px;padding:28px;box-shadow:0 18px 32px -24px rgba(0,0,0,.9);backdrop-filter:blur(6px);transition:transform .3s ease,box-shadow .3s ease}
+    .card:hover{transform:translateY(-4px);box-shadow:0 24px 40px -20px rgba(0,255,224,.25)}
+    .card h2,.card h3{margin-top:0;font-size:1.6rem;text-shadow:0 0 12px rgba(0,255,224,.35)}
+    .card p,.card li{color:var(--muted);line-height:1.8}
+    .btn{display:inline-block;padding:14px 24px;border-radius:999px;border:1px solid rgba(0,255,224,.8);text-decoration:none;color:var(--text);text-transform:uppercase;font-weight:600;letter-spacing:.08em;box-shadow:0 0 16px rgba(0,255,224,.35);transition:background .3s ease,box-shadow .3s ease,transform .2s ease}
+    .btn:hover{background:rgba(0,255,224,.12);box-shadow:0 0 22px rgba(0,255,224,.6);transform:translateY(-2px)}
+    footer{color:var(--muted);font-size:12px;text-align:center;padding:32px 0;border-top:1px solid rgba(0,255,224,.15);margin-top:48px;letter-spacing:.04em;text-transform:uppercase}
+    @media(min-width:900px){.hero-inner{flex-direction:row;justify-content:space-between;text-align:left}.hero-text{text-align:left}.hero-links{justify-content:flex-start}.hero-art{max-width:520px}}
+    @media(max-width:600px){h1{font-size:2.2rem}.card{padding:22px}.btn{width:100%;text-align:center}}
   </style>
 </head>
 <body>
 <header>
-  <h1>SHOUN GAMES</h1>
-  <p>ブラウザで遊べる作品のまとめポータル</p>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <h1>SHOUN PORTAL</h1>
+      <p class="tagline">ショウウン合同会社が運営する公式ポータル。ブログとオリジナルゲームの世界を、サイバーパンクな都市の光とともにお楽しみください。</p>
+      <div class="hero-links">
+        <a class="btn" href="https://blog.shoun-llc.jp/">ブログを見る</a>
+        <a class="btn" href="https://tetris.shoun-llc.jp/?from=portal">ゲームで遊ぶ</a>
+      </div>
+    </div>
+    <figure class="hero-art">
+      <img src="https://images.unsplash.com/photo-1526336024174-e58f5cdd8e13?auto=format&fit=crop&w=1200&q=80" alt="ネオンが輝くサイバーパンク都市の夜景" loading="lazy">
+    </figure>
+  </div>
 </header>
 <main>
   <section class="card">
+    <h2>📰 SHOUN BLOG</h2>
+    <p>最新の活動報告や開発ストーリー、テクノロジーへの洞察を発信しています。ポータルならではの限定記事にもアクセスできます。</p>
+    <p><a class="btn" href="https://blog.shoun-llc.jp/">ブログを読む</a></p>
+  </section>
+
+  <section class="card">
     <h2>🎮 Tetris</h2>
-    <p>シンプル&軽快なブラウザ版テトリス。キーボード操作に最適化しています。</p>
+    <p>シンプル&amp;軽快なブラウザ版テトリス。キーボード操作に最適化し、サイバー感あふれるエフェクトとともに楽しめます。</p>
     <!-- ポータル経由を判定できるよう from=portal を付与 -->
     <p><a class="btn" href="https://tetris.shoun-llc.jp/?from=portal">今すぐプレイ</a></p>
   </section>
