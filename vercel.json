@@ -2,8 +2,8 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.shoun-llc.jp" }],
-      "destination": "https://shoun-llc.jp/:path*",
+      "has": [{ "type": "host", "value": "shoun-llc.jp" }],
+      "destination": "https://www.shoun-llc.jp/:path*",
       "permanent": true
     }
   ]
