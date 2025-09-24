@@ -5,18 +5,24 @@
       "has": [{ "type": "host", "value": "www.shoun-llc.jp" }],
       "destination": "https://shoun-llc.jp/:path*",
       "permanent": true
+    },
+    {
+      "source": "/privacy.html",
+      "has": [{ "type": "host", "value": "privacy.shoun-llc.jp" }],
+      "destination": "/",
+      "permanent": true
     }
   ],
   "rewrites": [
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "shoun-llc.jp" }],
-      "destination": "/portal.html"
+      "has": [{ "type": "host", "value": "privacy.shoun-llc.jp" }],
+      "destination": "/privacy.html"
     },
     {
       "source": "/",
-      "has": [{ "type": "host", "value": "privacy.shoun-llc.jp" }],
-      "destination": "/privacy.html"
+      "has": [{ "type": "host", "value": "shoun-llc.jp" }],
+      "destination": "/index.html"
     }
   ]
 }
