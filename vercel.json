@@ -2,19 +2,20 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [
-        { "type": "host", "value": "www.shoun-llc.jp" }
-      ],
+      "has": [{ "type": "host", "value": "www.shoun-llc.jp" }],
       "destination": "https://shoun-llc.jp/:path*",
       "permanent": true
     }
   ],
   "rewrites": [
     {
+      "source": "/index.html",
+      "has": [{ "type": "host", "value": "privacy.shoun-llc.jp" }],
+      "destination": "/privacy.html"
+    },
+    {
       "source": "/",
-      "has": [
-        { "type": "host", "value": "privacy.shoun-llc.jp" }
-      ],
+      "has": [{ "type": "host", "value": "privacy.shoun-llc.jp" }],
       "destination": "/privacy.html"
     }
   ]
