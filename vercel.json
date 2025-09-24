@@ -24,6 +24,13 @@
         { "type": "host", "value": "privacy.shoun-llc.jp" }
       ],
       "destination": "/privacy.html"
+    },
+    {
+      "source": "/index.html",
+      "has": [
+        { "type": "host", "value": "privacy.shoun-llc.jp" }
+      ],
+      "destination": "/privacy.html"
     }
   ]
 }
